@@ -1,6 +1,6 @@
 package sist;
 
-import javax.swing.*;
+
 
 public class Test_SeungUk extends JFrame{
 
