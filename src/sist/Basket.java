@@ -9,6 +9,7 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.JTable;
 import javax.swing.JButton;
 import javax.swing.JLabel;
+import java.awt.Color;
 
 public class Basket extends JFrame {
 
@@ -38,11 +39,13 @@ public class Basket extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
+		contentPane.setForeground(Color.YELLOW);
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
 		JPanel panel2 = new JPanel();
+		panel2.setForeground(Color.ORANGE);
 		panel2.setBounds(0, 29, 434, 187);
 		contentPane.add(panel2);
 		
