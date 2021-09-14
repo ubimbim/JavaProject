@@ -6,6 +6,11 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+import javax.swing.JLabel;
+import java.awt.Color;
+import java.awt.Font;
+import javax.swing.JComboBox;
+import javax.swing.DefaultComboBoxModel;
 
 public class First extends JFrame {
 
@@ -37,6 +42,21 @@ public class First extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
+		
+		JPanel panel = new JPanel();
+		panel.setBounds(215, 0, 219, 261);
+		contentPane.add(panel);
+		panel.setLayout(null);
+		
+		JLabel lblNewLabel = new JLabel("테이블 선택");
+		lblNewLabel.setFont(new Font("휴먼엑스포", Font.PLAIN, 15));
+		lblNewLabel.setForeground(new Color(0, 0, 0));
+		lblNewLabel.setBounds(12, 41, 81, 19);
+		panel.add(lblNewLabel);
+		
+		// String[] number = {'1', '2', '3', '4', '5', '6', '7', '8', '9', '10'};
+		JComboBox tableno = new JComboBox();
+		tableno.setBounds(12, 70, 81, 21);
+		panel.add(tableno);
 	}
-
 }
